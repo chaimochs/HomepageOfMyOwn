@@ -1,0 +1,40 @@
+.weather-city {
+    font-weight: bold;
+    margin: 5% 5% 0 5%;
+}
+
+.weather-img{
+   width: 20%;
+   height: auto; 
+   display: inline-block;
+   margin-right: 2%;
+
+}
+
+.weather-main {
+    display:inline-block; 
+    vertical-align: top; 
+    margin-right: 2%;
+}
+.weather-temp {
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+.weather-rain {
+    display:inline-block;
+    vertical-align: top;
+}
+.col-sm-3 {
+    margin: 2% 0 2% 0 2%;
+    padding-left: 1px;
+    padding-right: 1px;
+    max-width: 30%;
+    font-size: 60%;
+}
+
+.weather-daily.card {
+    border: none;
+}
+
+
