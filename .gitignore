@@ -10,6 +10,7 @@
 
 # production
 /build
+/⁨backend⁩/django-todo-react⁩/⁨server⁩/⁨server⁩/db.py
 
 # misc
 .DS_Store
