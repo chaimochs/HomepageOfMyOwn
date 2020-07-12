@@ -1,0 +1,75 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
+:root {
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+	:root { font-size: 18px }
+}
+
+$buttonSize: 6rem;
+$black: #0e6666;
+$transBlack: rgba(0, 0, 0, 0.3);
+$gold: #CDB380;
+$cloud: #5E6F8C;
+$purp: #542437;
+
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font:{
+		family: 'Roboto Mono';
+		size: $buttonSize / 2;
+	}
+	background: linear-gradient(to bottom right, $purp 0%, $gold 100%) 100% no-repeat;
+}
+button{
+	width: $buttonSize;
+	height: $buttonSize/2;
+	font:{
+		family: 'Roboto Mono';
+		size: 18px;
+	}
+	background: none;
+	color: $gold;
+	border: none;
+	cursor: pointer;
+	transition: color 300ms ease-in-out;
+	&:hover{
+		color: $cloud;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+.calculator {
+	width: 5 * $buttonSize;
+	height: $buttonSize*4;
+	background: $black;
+  	box-shadow: 0 0 $buttonSize 0 $transBlack;
+  	margin-left: 5%;
+}
+.calc-display{
+	font-size: 24px;
+	padding: $buttonSize / 4 $buttonSize / 3;
+	// text-align: right;
+	color: $gold;
+	border-bottom: 2px solid $cloud;
+	box-shadow: 0 3px 16px -2px $transBlack;
+}
+.calc-numbers{
+	width: 3 * $buttonSize;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	float: left;
+}
+.calc-functions{
+	float: left;
+}

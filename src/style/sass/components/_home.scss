@@ -1,112 +1,34 @@
 .container {
-  height: 105%;
-  width: 105%;
-  display: grid;
-  grid-template-columns: 18% 64% 18%;
-  grid-template-rows: 60% 65% 125% 110% 120% 105% 40%;
-  grid-template-areas:
-    "header header header"
-    "0a browser 0b"
-    "1a browser 1b"
-    "2a browser 2b"
-    "3a browser 3b"
-    "4a browser 4b"
-    "footer footer footer";
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.header {
-  grid-area: header;
-  background: teal;
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
-.weather {
-  grid-area: 0a;
-  grid-column: 1/2;
-  grid-row: 2/3;
-  border: red solid 2px;
-  margin: 1px;
-  max-height: 1%;
-}
-.mail {
-  grid-area: 1a;
-  grid-column: 1/2;
-  grid-row: 3/4;
-  border: red solid 2px;
-  margin: 1px;
-}
-.calc {
-  grid-area: 2a;
-  grid-column: 1/2;
-  grid-row: 4/5;
-  border: red solid 2px;
-  margin: 1px;
-}
-.favorites {
-  grid-area: 3a;
-  grid-column: 1/2;
-  grid-row: 5/6;
-  border: red solid 2px;
-  margin: 1px;
-}
-.books {
-  grid-area: 4a;
-  grid-column: 1/2;
-  grid-row: 6/7;
-  border: red solid 2px;
-  margin: 1px;
-}
-
-.news {
-  grid-area: 0b;
-  grid-column: 3/4;
-  grid-row: 2/3;
-  border: red solid 2px;
-  margin: 1px;
-}
-.toDo {
-  grid-area: 1b;
-  grid-column: 3/4;
-  grid-row: 3/4;
-  border: red solid 2px;
-  margin: 1px;
-}
-.notes {
-  grid-area: 2b;
-  grid-column: 3/4;
-  grid-row: 4/5;
-  border: red solid 2px;
-  margin: 1px;
-}
-
-.flix {
-  grid-area: 3b;
-  grid-column: 3/4;
-  grid-row: 5/6;
-  border: red solid 2px;
-  margin: 1px;
-}
-.photos {
-  grid-area: 4b;
-  grid-column: 3/4;
-  grid-row: 6/7;
-  border: red solid 2px;
-  margin: 1px;
-}
-
+.header,
 .footer {
-    grid-area: footer;
-    background: teal;
-    grid-column: 1/4;
-    grid-row: 7/8;
-  }
+flex: 1 100%;
+height: 5vh;
+background: teal;
+}
+ 
+.main{
+  flex: 1 100%;
+  height: 90vh;
+  background: chartreuse;
+}
 
-  .browser {
-    grid-area: browser;
-    background: white;
-    grid-column: 2/3;
-    grid-row: 2/7;
-    border: red solid 2px;
-    margin: 1px;
-  }
+.row {
+  flex: 1;
+  width: 25.3vw;
+  height: 29.9vh;
+  padding-left: 2%;
+  // border-bottom: double blueviolet;
+  overflow-y: auto;
+}
+
+.row2 {
+  flex: 2;
+  width: 47vw;
+  height: 90vh;
+  // border: solid blueviolet 2px;
+  overflow-y: auto;
+}

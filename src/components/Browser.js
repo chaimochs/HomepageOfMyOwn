@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Calculator from './Calculator';
 
 const Browser = () => {
   const [url, setUrl] = useState("");
@@ -12,13 +13,18 @@ const Browser = () => {
 
   return (
     <div>
-      <input
-        type="url"
-        placeholder="enter url"
-        value={url}
-        onChange={(e) => handleUrl(e)}
-      />
-      <button onClick={openWindow}></button>
+      <div>
+        <input
+          type="url"
+          placeholder="enter url"
+          value={url}
+          onChange={(e) => handleUrl(e)}
+        />
+        <button onClick={openWindow}></button>
+      </div>
+      <div className='row calculator'>
+               <Calculator/>
+      </div>
     </div>
   );
 };
