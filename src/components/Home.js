@@ -2,11 +2,15 @@ import React, { useEffect } from 'react'
 import Browser from './Browser'
 import Weather from './Weather'
 import News from './News'
-import Notes from './Notes';
+import Notes from './Notes'
 import Books from './Books'
+import {initDb} from '../sql.js'
+// import { sqladmin } from 'googleapis/build/src/apis/sqladmin'
+const { Sequelize } = require('sequelize')
 // import Calculator from './Calculator';
 
-const Home = () => {    
+const Home = () => {  
+    
     return (
         <div className='container'>
         <div className='header'>
